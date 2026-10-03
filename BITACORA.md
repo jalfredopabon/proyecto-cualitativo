@@ -70,6 +70,7 @@
 
 | ID Fuente | Tipo | Participante / Documento (Pseudónimo) | Fecha Recolección | Duración / Extensión | Estado Transcripción | Estado Codificación |
 | :---: | :--- | :--- | :---: | :---: | :---: | :---: |
+| `CP-01` | Círculo de la Palabra | Estudiantes Grado 701 (JM) - Apertura y Acuerdos | 15/07/2026 | 01h 26m 33s | ✅ Transcrito (`TRANSCRIPCION_CP1_APERTURA.md`) | ⏳ Pendiente |
 | `E-01` | Entrevista a profundidad | *[Usuaria A - Caso ruta judicial/denuncia]* | --/--/---- | -- min | ⏳ Pendiente | ⏳ No iniciada |
 | `E-02` | Entrevista semiestructurada | *[Operador/a de justicia o defensor público]* | --/--/---- | -- min | ⏳ Pendiente | ⏳ No iniciada |
 | `E-03` | Entrevista semiestructurada | *[Profesional psicosocial / psicólogo forense]* | --/--/---- | -- min | ⏳ Pendiente | ⏳ No iniciada |
