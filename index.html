@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El Enfoque Cualitativo en la Investigación Social | Guía Interactiva Magistral</title>
+  <meta name="description" content="Plataforma pedagógica interactiva con diseño UI/UX moderno para la enseñanza del enfoque cualitativo, paradigmas, diseños, rigor metodológico y taller de codificación en vivo.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Hoja de estilos -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       BARRA DE NAVEGACIÓN SUPERIOR
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="#inicio" class="brand" title="Ir al inicio">
+        <span class="brand-badge">QC</span>
+        <div class="brand-text">
+          <h1>Enfoque Cualitativo</h1>
+          <p>Laboratorio & Guía Epistemológica</p>
+        </div>
+      </a>
+
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a href="#pilares" class="nav-link">Pilares</a>
+        <a href="#comparador" class="nav-link">Cuali vs Cuanti</a>
+        <a href="#disenos" class="nav-link">Diseños</a>
+        <a href="#laboratorio" class="nav-link">Taller de Codificación</a>
+        <a href="#referencias" class="nav-link">📚 Referencias (Zotero)</a>
+        <a href="#rigor" class="nav-link">Rigor Científico</a>
+        <a href="#evaluacion" class="nav-link">Autoevaluación</a>
+      </nav>
+
+      <div class="nav-controls">
+        <button id="presentation-btn" class="btn-icon" title="Modo Presentación para Proyector / Clase" aria-label="Modo Pantalla Completa para Proyector">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+            <line x1="8" y1="21" x2="16" y2="21"></line>
+            <line x1="12" y1="17" x2="12" y2="21"></line>
+          </svg>
+        </button>
+
+        <button id="theme-toggle-btn" class="btn-icon" title="Alternar Modo Claro / Oscuro" aria-label="Alternar tema">
+          <span id="theme-icon">☀️</span>
+        </button>
+
+        <a href="#laboratorio" class="btn-pill btn-primary">
+          <span>Práctica en Vivo</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       CONTENIDO PRINCIPAL
+       ======================================================================== -->
+  <main class="main-content">
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="hero">
+      <div class="hero-pill">
+        <span>📚 Módulo Docente Universitario</span>
+        <span>•</span>
+        <span>Investigación Social Aplicada</span>
+      </div>
+
+      <h1 class="hero-title">
+        Comprender el Sentido: <br>
+        <span class="gradient-text">El Enfoque Cualitativo</span>
+      </h1>
+
+      <p class="hero-desc">
+        Mientras las ciencias cuantitativas cuentan, miden y generalizan, la investigación cualitativa <strong>profundiza, interpreta y devela significados</strong> en las vivencias y contextos de las personas. Una guía interactiva diseñada para estudiantes de posgrado y pregrado.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#laboratorio" class="btn-pill btn-primary" style="padding: 0.75rem 1.6rem; font-size: 0.95rem;">
+          🔬 Explorar Laboratorio de Códigos
+        </a>
+        <a href="#comparador" class="btn-pill" style="background: var(--bg-card); border: 1px solid var(--border-subtle); color: var(--text-main); padding: 0.75rem 1.4rem;">
+          ⚖️ Comparar Cuali vs Cuanti
+        </a>
+      </div>
+
+      <!-- PUNTOS CARDINALES -->
+      <div class="hero-stats-grid">
+        <div class="stat-card">
+          <div class="stat-icon" style="background: rgba(99, 102, 241, 0.15); color: #818cf8;">🔍</div>
+          <h3 class="stat-title">Lógica Inductiva</h3>
+          <p class="stat-desc">No se imponen hipótesis a priori. La teoría y las categorías emergen desde la riqueza del campo.</p>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon" style="background: rgba(16, 185, 129, 0.15); color: #34d399;">👤</div>
+          <h3 class="stat-title">Investigador = Instrumento</h3>
+          <p class="stat-desc">La empatía, la reflexividad y la mirada crítica median la recolección viva de los datos.</p>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon" style="background: rgba(245, 158, 11, 0.15); color: #fbbf24;">🧩</div>
+          <h3 class="stat-title">Saturación Teórica</h3>
+          <p class="stat-desc">El muestreo se detiene no por un número estadístico, sino cuando los datos dejan de aportar novedad conceptual.</p>
+        </div>
+
+        <div class="stat-card">
+          <div class="stat-icon" style="background: rgba(244, 63, 94, 0.15); color: #fb7185;">🌿</div>
+          <h3 class="stat-title">Perspectiva Émica</h3>
+          <p class="stat-desc">Prioriza la voz, los términos y el marco de referencia propio de los sujetos participantes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 1: COMPARADOR DE PARADIGMAS -->
+    <section id="comparador" class="section-block">
+      <div class="section-header">
+        <span class="section-tag tag-indigo">Epistemología Comparada</span>
+        <h2 class="section-title">Cualitativo vs. Cuantitativo</h2>
+        <p class="section-subtitle">
+          No son enfoques antagónicos, sino formas complementarias de interrogar a la realidad. Usa los botones para alternar entre ambos mundos metodológicos.
+        </p>
+      </div>
+
+      <div class="paradigm-box">
+        <div class="paradigm-selector" role="tablist">
+          <button class="paradigm-tab active" data-paradigm="cualitativo" role="tab" aria-selected="true">
+            <span>✨ Enfoque Cualitativo (Comprensivo / Hermenéutico)</span>
+          </button>
+          <button class="paradigm-tab" data-paradigm="cuantitativo" role="tab" aria-selected="false">
+            <span>📊 Enfoque Cuantitativo (Positivista / Explicativo)</span>
+          </button>
+        </div>
+
+        <div class="dimension-grid">
+          <!-- Tarjeta 1 -->
+          <article class="dimension-card" id="dim-logica">
+            <div class="dimension-header">
+              <span class="dimension-title">1. Lógica y Ruta</span>
+              <span>🔄</span>
+            </div>
+            <h4 class="dimension-main-title" style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; color: #a5b4fc;">
+              Inductiva / Espiralada
+            </h4>
+            <p class="dimension-body dimension-desc">
+              Parte de lo particular y contextual hacia pautas generales. Es flexible, abierta y se retroalimenta continuamente en el campo.
+            </p>
+            <div class="dimension-example">
+              Ejemplo: Comprender cómo cada víctima significa el trato institucional sin hipótesis prefijadas.
+            </div>
+          </article>
+
+          <!-- Tarjeta 2 -->
+          <article class="dimension-card" id="dim-meta">
+            <div class="dimension-header">
+              <span class="dimension-title">2. Propósito Epistémico</span>
+              <span>🎯</span>
+            </div>
+            <h4 class="dimension-main-title" style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; color: #a5b4fc;">
+              Comprensión del Sentido (Verstehen)
+            </h4>
+            <p class="dimension-body dimension-desc">
+              Busca profundidad, significados subjetivos, matices culturales y la vivencia experimentada de las personas.
+            </p>
+            <div class="dimension-example">
+              Ejemplo: ¿Qué representa la justicia o la soledad institucional para una mujer denunciante?
+            </div>
+          </article>
+
+          <!-- Tarjeta 3 -->
+          <article class="dimension-card" id="dim-instrumento">
+            <div class="dimension-header">
+              <span class="dimension-title">3. Rol del Investigador</span>
+              <span>🎙️</span>
+            </div>
+            <h4 class="dimension-main-title" style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; color: #a5b4fc;">
+              El Investigador como Instrumento
+            </h4>
+            <p class="dimension-body dimension-desc">
+              La reflexividad, empatía, escucha activa y notas de campo median la construcción compartida del dato.
+            </p>
+            <div class="dimension-example">
+              Ejemplo: Guías de entrevista semiestructurada abiertas a temas emergentes e historias de vida.
+            </div>
+          </article>
+
+          <!-- Tarjeta 4 -->
+          <article class="dimension-card" id="dim-muestra">
+            <div class="dimension-header">
+              <span class="dimension-title">4. Muestra y Casos</span>
+              <span>👥</span>
+            </div>
+            <h4 class="dimension-main-title" style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; color: #a5b4fc;">
+              Muestreo Intencional / Teórico
+            </h4>
+            <p class="dimension-body dimension-desc">
+              No busca representatividad estadística, sino riqueza informativa y saturación teórica (hasta que no surjan nuevos códigos).
+            </p>
+            <div class="dimension-example">
+              Ejemplo: 12 informantes clave con trayectorias contrastantes en la ruta penal.
+            </div>
+          </article>
+
+          <!-- Tarjeta 5 -->
+          <article class="dimension-card" id="dim-criterios">
+            <div class="dimension-header">
+              <span class="dimension-title">5. Criterios de Rigor</span>
+              <span>🛡️</span>
+            </div>
+            <h4 class="dimension-main-title" style="font-size: 1.1rem; font-weight: 700; margin-bottom: 0.5rem; color: #a5b4fc;">
+              Rigor Cualitativo (Guba & Lincoln)
+            </h4>
+            <p class="dimension-body dimension-desc">
+              Credibilidad, Transferibilidad, Dependencia y Confirmabilidad respaldados por pistas de auditoría y reflexividad.
+            </p>
+            <div class="dimension-example">
+              Ejemplo: Triangulación de relatos de víctimas con testimonios de defensores públicos.
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 2: LOS 4 GRANDES DISEÑOS CUALITATIVOS -->
+    <section id="disenos" class="section-block">
+      <div class="section-header">
+        <span class="section-tag tag-emerald">Metodologías de Diseño</span>
+        <h2 class="section-title">Principales Tradiciones y Diseños Cualitativos</h2>
+        <p class="section-subtitle">
+          Cada diseño responde a una pregunta epistemológica distinta: desde la experiencia pura hasta las dinámicas culturales o la teorización inductiva.
+        </p>
+      </div>
+
+      <div class="designs-grid">
+        <!-- Diseño 1: Fenomenología -->
+        <div class="design-card">
+          <div class="design-top">
+            <div class="design-badge-icon" style="background: rgba(99, 102, 241, 0.15); color: #818cf8;">👁️</div>
+            <h3 class="design-name">Fenomenología</h3>
+            <p class="design-author">Husserl, Heidegger, Van Manen</p>
+            <p class="design-premise">
+              Explora la esencia y la estructura de la <em>vivencia vivida</em> (Lebenswelt) de un fenómeno tal como es percibido directamente por la conciencia del sujeto.
+            </p>
+          </div>
+          <div class="design-footer">
+            <p class="design-question">¿Cuál es el significado y la esencia de vivir la revictimización en carne propia?</p>
+          </div>
+        </div>
+
+        <!-- Diseño 2: Teoría Fundamentada -->
+        <div class="design-card">
+          <div class="design-top">
+            <div class="design-badge-icon" style="background: rgba(16, 185, 129, 0.15); color: #34d399;">🧱</div>
+            <h3 class="design-name">Teoría Fundamentada</h3>
+            <p class="design-author">Glaser & Strauss, Charmaz</p>
+            <p class="design-premise">
+              Método comparativo continuo y codificación sistemática (abierta, axial, selectiva) orientado a generar un modelo o teoría sustantiva arraigada en los datos.
+            </p>
+          </div>
+          <div class="design-footer">
+            <p class="design-question">¿Qué proceso psicosocial básico explica el desistimiento procesal de las víctimas?</p>
+          </div>
+        </div>
+
+        <!-- Diseño 3: Etnografía -->
+        <div class="design-card">
+          <div class="design-top">
+            <div class="design-badge-icon" style="background: rgba(245, 158, 11, 0.15); color: #fbbf24;">🌍</div>
+            <h3 class="design-name">Etnografía</h3>
+            <p class="design-author">Malinowski, Geertz, Hammersley</p>
+            <p class="design-premise">
+              Inmersión prolongada en el campo, observación participante y descripción densa para desentrañar los patrones culturales, rituales y normas tácitas de un grupo.
+            </p>
+          </div>
+          <div class="design-footer">
+            <p class="design-question">¿Cómo opera la cultura burocrática y el lenguaje cotidiano en una fiscalía de atención rápida?</p>
+          </div>
+        </div>
+
+        <!-- Diseño 4: Narrativa / Biográfico -->
+        <div class="design-card">
+          <div class="design-top">
+            <div class="design-badge-icon" style="background: rgba(244, 63, 94, 0.15); color: #fb7185;">📖</div>
+            <h3 class="design-name">Investigación Narrativa</h3>
+            <p class="design-author">Clandinin & Connelly, Bruner</p>
+            <p class="design-premise">
+              Analiza cómo las personas estructuran y dan sentido a su existencia a través del relato cronológico: tramas, puntos de inflexión y resignificación biográfica.
+            </p>
+          </div>
+          <div class="design-footer">
+            <p class="design-question">¿Cómo reconstruye una persona su identidad y trayectoria vital tras transitar el sistema judicial?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 3: LABORATORIO DE CODIFICACIÓN (EJEMPLO REAL DEL PROYECTO) -->
+    <section id="laboratorio" class="section-block">
+      <div class="section-header">
+        <span class="section-tag tag-rose">Taller Práctico Interactivo</span>
+        <h2 class="section-title">Laboratorio de Codificación Cualitativa</h2>
+        <p class="section-subtitle">
+          ¡Aprende cómo se pasa del texto crudo al código y al memo analítico! Haz clic sobre los fragmentos subrayados del testimonio para inspeccionar su categorización.
+        </p>
+      </div>
+
+      <div class="lab-container">
+        <div class="lab-header">
+          <div class="lab-title-box">
+            <h3><span>📂</span> Corpus: Entrevista E-01 (Usuaria en Ruta Institucional)</h3>
+            <p>Caso de estudio extraído del proyecto de investigación sobre victimización secundaria</p>
+          </div>
+          <div style="font-size: 0.8rem; color: var(--text-dim);">
+            <span>Interactividad: </span><strong style="color: var(--accent-primary);">Haz clic en el texto</strong>
+          </div>
+        </div>
+
+        <div class="lab-workspace">
+          <!-- Panel Izquierdo: Transcripción con fragmentos interactivos -->
+          <div class="lab-interview-pane">
+            <div class="pane-label">
+              <span>Transcripción de Audio (Verbatim)</span>
+              <span>Líneas 14-22</span>
+            </div>
+
+            <div class="interview-text-box">
+              <span class="speaker-tag">ENTREVISTADA (Seudónimo: Mariana, 32 años):</span>
+              "Cuando llegué a la primera institución después de lo ocurrido, pensé que me iban a orientar. Pero no fue así... 
+              <mark class="codeable-segment active-segment" data-segment-key="seg-reiteracion">
+                Tuve que relatar lo ocurrido cuatro veces a distintos funcionarios en menos de seis horas, cada uno pidiéndome detalles como si el anterior no hubiera escrito nada.
+              </mark>
+              
+              Lo peor fue en la sala de denuncias: 
+              <mark class="codeable-segment" data-segment-key="seg-cuestiona">
+                me miraban de arriba a abajo, con cara de duda, como si fuera mi culpa o estuviera exagerando lo que viví.
+              </mark>
+              
+              <mark class="codeable-segment" data-segment-key="seg-desamparo">
+                En ese momento sentí una impotencia absoluta, como si el sistema me castigara a mí en lugar de protegerme;
+              </mark>
+              casi me voy sin firmar nada.
+              
+              Afortunadamente, al final de la tarde, 
+              <mark class="codeable-segment" data-segment-key="seg-trato-hum">
+                llegué con la profesional de atención psicosocial, quien me miró a los ojos, no me juzgó y me explicó con calma cada paso que venía.
+              </mark>
+              Ese pequeño gesto me devolvió el aire."
+            </div>
+          </div>
+
+          <!-- Panel Derecho: Inspector de Códigos y Memos -->
+          <div class="lab-inspector-pane">
+            <div class="pane-label">
+              <span>Inspector de Análisis Cualitativo</span>
+              <span>ATLAS.ti / MAXQDA Simulado</span>
+            </div>
+
+            <div class="inspector-card">
+              <div class="inspector-field-title">Código Cualitativo Asignado</div>
+              <span id="inspector-code-badge" class="code-pill-badge badge-rev-reiteracion">
+                [REV_REITERACION]
+              </span>
+
+              <div class="inspector-field-title">Dimensión / Categoría Axial</div>
+              <div id="inspector-dim" class="inspector-field-val" style="font-weight: 700; color: #a5b4fc;">
+                Prácticas Institucionales
+              </div>
+
+              <div class="inspector-field-title">Definición Operativa del Código</div>
+              <div id="inspector-def" class="inspector-field-val">
+                Obligación impuesta a la víctima de relatar el hecho traumático en múltiples instancias sin coordinación ni articulación entre agencias.
+              </div>
+
+              <div class="inspector-field-title">Cita Textual Representativa (In Vivo)</div>
+              <div id="inspector-quote" class="inspector-field-val" style="font-family: var(--font-serif); font-style: italic; color: var(--text-main);">
+                "Tuve que relatar lo ocurrido cuatro veces a distintos funcionarios en menos de seis horas..."
+              </div>
+
+              <div class="inspector-field-title">Memo Analítico / Reflexividad Teórica</div>
+              <div id="inspector-memo" class="memo-box">
+                Memo Analítico #02: La reiteración forzada funciona como una violencia burocrática invisible. El sistema exige memoria repetitiva sin garantizar resguardo emocional ni expediente único compartido.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 4: GESTOR DE REFERENCIAS BIBLIOGRÁFICAS (ESTILO ZOTERO) -->
+    <section id="referencias" class="section-block">
+      <div class="section-header">
+        <span class="section-tag tag-indigo">Biblioteca de Investigación</span>
+        <h2 class="section-title">Gestor Bibliográfico Integrado (Estilo Zotero)</h2>
+        <p class="section-subtitle">
+          Almacena, busca y formatea automáticamente tus referencias académicas en <strong>normas APA 7ma edición</strong>. Puedes copiar citas directas con un solo clic o exportarlas a tu investigación.
+        </p>
+      </div>
+
+      <div class="zotero-container">
+        <!-- Barra de herramientas superior -->
+        <div class="zotero-toolbar">
+          <div class="zotero-search-box">
+            <span>🔍</span>
+            <input type="text" id="zotero-search" class="zotero-search-input" placeholder="Buscar por autor, título, concepto o etiqueta...">
+          </div>
+
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <span id="ref-count-badge" style="font-size: 0.8rem; font-weight: 700; color: var(--text-dim); font-family: var(--font-mono);">
+              5 referencias
+            </span>
+            <button id="export-refs-btn" class="btn-pill" style="background: var(--bg-elevated); border: 1px solid var(--border-subtle); color: var(--text-main); font-size: 0.78rem;">
+              📤 Exportar Todas (Markdown / APA)
+            </button>
+          </div>
+        </div>
+
+        <!-- Filtros rápidos por etiqueta -->
+        <div class="zotero-filter-tags">
+          <button class="tag-filter-btn active" data-tag="Todos">Todos</button>
+          <button class="tag-filter-btn" data-tag="Metodología Cualitativa">Metodología Cualitativa</button>
+          <button class="tag-filter-btn" data-tag="Victimización Secundaria">Victimización Secundaria</button>
+          <button class="tag-filter-btn" data-tag="Rigor Científico">Rigor Científico</button>
+          <button class="tag-filter-btn" data-tag="Ética y Derechos Humanos">Ética y Derechos Humanos</button>
+        </div>
+
+        <!-- Contenedor Principal: Lista y Formulario lateral -->
+        <div class="zotero-main-grid">
+          <!-- Lista de referencias -->
+          <div id="zotero-ref-list" class="references-list-pane">
+            <!-- Renderizado dinámico desde app.js -->
+          </div>
+
+          <!-- Formulario lateral para añadir referencia -->
+          <div class="reference-form-pane">
+            <h3 style="font-size: 1.05rem; font-weight: 700; margin-bottom: 0.25rem;">
+              ➕ Agregar Referencia
+            </h3>
+            <p style="font-size: 0.78rem; color: var(--text-muted); margin-bottom: 0.5rem;">
+              Genera la ficha y guárdala localmente en tu biblioteca.
+            </p>
+
+            <form id="add-reference-form">
+              <div class="form-group" style="margin-bottom: 0.75rem;">
+                <label class="form-label" for="form-type">Tipo de Fuente</label>
+                <select id="form-type" class="form-control">
+                  <option value="Artículo">Artículo de Revista Científica</option>
+                  <option value="Libro">Libro / Monografía</option>
+                  <option value="Capítulo">Capítulo de Libro</option>
+                  <option value="Tesis">Tesis de Posgrado</option>
+                  <option value="Informe / Libro">Informe Institucional / Guía</option>
+                </select>
+              </div>
+
+              <div class="form-group" style="margin-bottom: 0.75rem;">
+                <label class="form-label" for="form-authors">Autores (Apellido, Iniciales)</label>
+                <input type="text" id="form-authors" class="form-control" placeholder="Ej: Galeano, E., & Bonilla, C." required>
+              </div>
+
+              <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; margin-bottom: 0.75rem;">
+                <div class="form-group">
+                  <label class="form-label" for="form-year">Año</label>
+                  <input type="text" id="form-year" class="form-control" placeholder="Ej: 2024" maxlength="4">
+                </div>
+                <div class="form-group">
+                  <label class="form-label" for="form-tag">Etiqueta</label>
+                  <select id="form-tag" class="form-control">
+                    <option value="Metodología Cualitativa">Metodología Cualitativa</option>
+                    <option value="Victimización Secundaria">Victimización Secundaria</option>
+                    <option value="Rigor Científico">Rigor Científico</option>
+                    <option value="Ética y Derechos Humanos">Ética y Derechos Humanos</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-group" style="margin-bottom: 0.75rem;">
+                <label class="form-label" for="form-title">Título</label>
+                <input type="text" id="form-title" class="form-control" placeholder="Título de la publicación" required>
+              </div>
+
+              <div class="form-group" style="margin-bottom: 0.75rem;">
+                <label class="form-label" for="form-source">Revista / Editorial / Institución</label>
+                <input type="text" id="form-source" class="form-control" placeholder="Ej: Revista Mexicana de Sociología, 85(1), 45-70">
+              </div>
+
+              <div class="form-group" style="margin-bottom: 0.75rem;">
+                <label class="form-label" for="form-doi">DOI o Enlace Web</label>
+                <input type="text" id="form-doi" class="form-control" placeholder="https://doi.org/...">
+              </div>
+
+              <div class="form-group" style="margin-bottom: 1rem;">
+                <label class="form-label" for="form-notes">Nota de Análisis / Relevancia</label>
+                <textarea id="form-notes" class="form-control" rows="2" placeholder="¿Por qué es clave para tu marco teórico o metodológico?"></textarea>
+              </div>
+
+              <button type="submit" class="btn-pill btn-primary" style="width: 100%; justify-content: center; padding: 0.65rem;">
+                💾 Guardar en Mi Biblioteca
+              </button>
+            </form>
+
+            <div id="ref-success-toast" class="ref-success-toast">
+              <span>✅</span> Referencia agregada y guardada en tu biblioteca.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 5: CRITERIOS DE RIGOR CIENTÍFICO (GUBA & LINCOLN) -->
+    <section id="rigor" class="section-block">
+      <div class="section-header">
+        <span class="section-tag tag-amber">Validez & Calidad</span>
+        <h2 class="section-title">El Rigor Científico Cualitativo (Guba & Lincoln)</h2>
+        <p class="section-subtitle">
+          En la investigación cualitativa no se habla de "objetividad neutra" o "confiabilidad estadística", sino de confianza, transparencia y autenticidad del proceso.
+        </p>
+      </div>
+
+      <div class="rigor-grid">
+        <div class="rigor-card">
+          <div class="rigor-icon">🎯</div>
+          <h3 class="rigor-name">Credibilidad</h3>
+          <p class="rigor-equiv">Equivalente a: Validez Interna</p>
+          <p class="rigor-desc">
+            Garantiza que las interpretaciones reflejen con fidelidad las construcciones de sentido de los participantes.
+          </p>
+          <ul class="rigor-strategies">
+            <li>Triangulación de fuentes y métodos</li>
+            <li>Validación con participantes (Member checking)</li>
+            <li>Permanencia prolongada en el campo</li>
+          </ul>
+        </div>
+
+        <div class="rigor-card">
+          <div class="rigor-icon">🌐</div>
+          <h3 class="rigor-name">Transferibilidad</h3>
+          <p class="rigor-equiv">Equivalente a: Validez Externa</p>
+          <p class="rigor-desc">
+            Permite a otros investigadores evaluar si los hallazgos son aplicables a contextos socioculturales afines.
+          </p>
+          <ul class="rigor-strategies">
+            <li>Descripción densa y contextualizada</li>
+            <li>Detalle de características de los casos</li>
+            <li>Delimitación clara del marco institucional</li>
+          </ul>
+        </div>
+
+        <div class="rigor-card">
+          <div class="rigor-icon">📑</div>
+          <h3 class="rigor-name">Dependencia</h3>
+          <p class="rigor-equiv">Equivalente a: Confiabilidad</p>
+          <p class="rigor-desc">
+            Estabilidad y trazabilidad de los datos; capacidad de auditar cada decisión tomada por el equipo de investigación.
+          </p>
+          <ul class="rigor-strategies">
+            <li>Pista de auditoría sistemática (Audit Trail)</li>
+            <li>Bitácora metodológica al día</li>
+            <li>Revisión por investigadores externos</li>
+          </ul>
+        </div>
+
+        <div class="rigor-card">
+          <div class="rigor-icon">🪞</div>
+          <h3 class="rigor-name">Confirmabilidad</h3>
+          <p class="rigor-equiv">Equivalente a: Objetividad</p>
+          <p class="rigor-desc">
+            Asegura que los resultados provengan de las experiencias de los sujetos y no de sesgos o prejuicios del investigador.
+          </p>
+          <ul class="rigor-strategies">
+            <li>Redacción continua de memorandos analíticos</li>
+            <li>Reflexividad epistemológica explícita</li>
+            <li>Reconocimiento de limitaciones propias</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCIÓN 5: MINI-QUIZ DE AUTOEVALUACIÓN -->
+    <section id="evaluacion" class="section-block">
+      <div class="section-header" style="text-align: center;">
+        <span class="section-tag tag-indigo">Comprueba tu Aprendizaje</span>
+        <h2 class="section-title">Mini-Quiz Pedagógico para Estudiantes</h2>
+        <p class="section-subtitle" style="margin: 0 auto;">
+          Pon a prueba tu comprensión sobre la epistemología del enfoque cualitativo.
+        </p>
+      </div>
+
+      <div class="quiz-container">
+        <h3 class="quiz-question">
+          ❓ ¿Cuál de las siguientes afirmaciones describe con mayor precisión la lógica del muestreo en un estudio cualitativo?
+        </h3>
+
+        <div class="quiz-options">
+          <button class="quiz-option" data-correct="false">
+            <span>A) Debe seleccionarse mediante una fórmula probabilística aleatoria para garantizar un margen de error menor al 5%.</span>
+            <span>⚪</span>
+          </button>
+
+          <button class="quiz-option" data-correct="true">
+            <span>B) Es intencional y guiado por criterios teóricos; el tamaño de la muestra se define por el principio de saturación teórica.</span>
+            <span>⚪</span>
+          </button>
+
+          <button class="quiz-option" data-correct="false">
+            <span>C) Exige encuestar al menos a 100 personas para que el tribunal de tesis acepte su validez estadística.</span>
+            <span>⚪</span>
+          </button>
+
+          <button class="quiz-option" data-correct="false">
+            <span>D) Depende exclusivamente de probar una hipótesis nula prefijada antes del trabajo de campo.</span>
+            <span>⚪</span>
+          </button>
+        </div>
+
+        <div id="quiz-feedback" class="quiz-feedback"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       FOOTER ACADÉMICO
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p style="font-weight: 700; color: var(--text-main); font-size: 1rem;">
+        Plataforma Docente: El Enfoque Cualitativo en la Investigación Social
+      </p>
+      <p>
+        Diseñado con rigor metodológico para estudiantes de posgrado y pregrado. Basado en los estándares de Guba & Lincoln, Braun & Clarke, Charmaz y Van Manen.
+      </p>
+      <p style="font-size: 0.78rem; color: var(--text-dim);">
+        Proyecto Cualitativo • Tecnologías Vanilla Web (HTML5 / CSS3 / JS) • Accesible & Responsivo
+      </p>
+    </div>
+  </footer>
+
+  <!-- Script principal -->
+  <script src="js/app.js"></script>
+</body>
+</html>

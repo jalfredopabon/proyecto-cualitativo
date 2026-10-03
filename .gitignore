@@ -1,0 +1,11 @@
+# Archivos de entorno y temporales
+node_modules/
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+
+# Archivos pesados
+*.mp4
+*.pdf
+
